@@ -1,0 +1,83 @@
+
+
+body {
+    margin: 0;
+    padding: 5px 20px 5px 20px;
+    background-color: #1e0c30;
+    color: #FFFFFF;
+
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 12px; */
+    
+}
+
+
+.container{
+    margin: 0;
+    max-width: 100%!important;
+    
+}
+
+
+#body-wrap {
+    height: 100vh;
+    /* height: 770px; */
+    /* height: 790px; */
+    max-width: 1369px; 
+    margin: 10px auto 0;
+    
+}
+
+#topnav {
+    padding: 8px 0 30px 0!important;
+}
+.container-fluid {
+    padding: 0!important;
+}
+
+/* #body-wrap, #social, #Ts-Cs, #header, #breadCrum, #wordList {
+    border: 1px solid #fff;
+} */
+
+
+
+/* wrapper - home Page */
+.wrapper {
+    position: relative;
+
+}
+
+
+/* beadcrum */
+#breadCrum {
+    /* margin-bottom: 100px; */
+    /* rotate */
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg); /* Standard syntax */
+    /* top: 60%; */
+    left: -7.4%;
+    float: left;
+    padding-left: 0!important;
+}
+
+#breadCrum .text{
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
+
+
+/* social and breadcrum */
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    /* font-size: 18px; */
+}
+/* Ts & Cs */
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    /* font-size: 18px; */
+}

@@ -1,0 +1,11 @@
+#wordList{
+    /* position: relative; */
+    height: 90%;
+    margin-right: 5px;
+}
+
+#wordList, #words, #filter {
+    border: 1px solid yellow;
+    /* height: 95%; */
+}
+
