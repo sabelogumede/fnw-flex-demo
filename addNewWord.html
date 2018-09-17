@@ -8,6 +8,8 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -63,10 +65,19 @@
                       <label for="word" class="control-label"></label>
                       <input type="text" name="word" class="form-control " id="word" value="Your Word">
                     </div>
-
+                      
                     <div class="form-group col-sm-6">
-                      <label for="language" class="control-label"></label>
-                      <input type="text" name="language" class="form-control" id="language" value="What Language is This?">
+                      <label for="language" class="dropdownArrow">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">What Language is This?<span class="caret float-right"><span></button>
+                        <ul class="dropdown-menu" multiple="multiple">
+                          <input id="Afrikaans" type="checkbox" name="languages" value="Afrikaans"/>
+                          <label for="Afrikaans">Afrikaans</label>
+                          <input id="English" type="checkbox" name="English" value="English"/>
+                          <label for="English">English</label>
+                        
+                        </ul>
+                      </label>
+                      
                     </div>
 
                     <div class="form-group col-sm-6">
@@ -78,11 +89,170 @@
                       <label for="word-mean" class="control-label"></label>
                       <input type="text" name="word-mean" class="form-control" id="word-mean" value="What does this word mean to you?">
                     </div>
-
+                    <!-- classification input -->
                     <div class="form-class-button col-sm-12">
-                      <button type="button" class="btn btn-default btn-circle btn-lg"><i class="fa fa-check"></i></button>
+
+                      <button href="#classification" data-toggle="modal" role="button" type="button" class="btn btn-default btn-circle btn-lg"><i class="fas fa-times"></i></button>
+                      <!-- <a href="#classification" role="button" class="btn btn-primary" data-toggle="modal">Launch modal</a> -->
+
                       <label for="notification" class="form-check-label">Add a classification to your word</label>
                     </div>
+                    <!-- end of classification input -->
+
+                    <!-- 
+                    full screen Modal
+                    -->
+
+                    <div class="modal" id="classification" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-full" role="document">
+                              <div class="modal-content">
+
+                                  
+                                  <div class="modal-body p-4" id="result">
+                                  
+                                              <div id="body-wrap" class="wrapper">
+    
+                                                <!-- Top Header -->
+                                                <nav id="topnav" class="navbar navbar-trans">
+                                                  <div class="container-fluid">
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                      <span aria-hidden="true">Close</span>
+                                                  </button>
+                                                      <!-- <a href="#">Close</a> -->
+                                                      <div class="topnav-right"> 
+                                                        <a href="#"><img src="images/Logo.png" alt=""></a>
+                                                      </div>
+                                                  </div>        
+                                                </nav>
+                                                
+
+                                                <!-- container-->
+                                                <div class="container">
+                                                  <div class="row">
+
+                                                    <div class="col-sm-12">
+                                                      <div class="container">
+                                                        <div class="row">
+
+                                                          <div id="contact" class="col-sm-2 class-list">
+                                                            <h4>classification</h4>
+                                                          </div>
+                                                          <!--form -->
+                                                          <div id="contact"  class="col-sm-10 class-list">
+
+                                                            <div class="row">
+                                                            <form>
+                                                                <div class="form-group col-sm-3">
+                                                                      <label><input type="checkbox" value="Queer" name="classification"> Queer</label>
+                                                                </div>
+                                                      
+                                                                <div class="form-group col-sm-3">
+                                                                      <label><input type="checkbox" value="Gay/MLSM" name="classification"> Gay/MLSM</label>
+                                                                </div>
+
+                                                                 <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Fluid" name="classification"> Fluid</label>
+                                                                </div>
+
+                                                                <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Ally" name="classification"> Ally</label>
+                                                                </div>
+
+                                                                <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Lesbian/WLSW" name="classification"> Lesbian/WLSW</label>
+                                                                </div>
+
+                                                                <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Bisexual" name="classification"> Bisexual</label>
+                                                                </div>
+
+                                                                <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Transgender" name="classification"> Transgender</label>
+                                                                </div>
+
+                                                                <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Gender non conforming" name="classification"> Gender non conforming</label>
+                                                                </div>
+
+                                                                <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Intersex" name="classification"> Intersex</label>
+                                                                </div>
+
+                                                                <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Pansexual" name="classification"> Pansexual</label>
+                                                                </div>
+
+                                                                <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Asexual" name="classification"> Asexual</label>
+                                                                </div>
+                                                                <div class="form-group col-sm-3">
+                                                                  <label><input type="checkbox" value="Other" name="classification"> Other</label>
+                                                                </div>
+                                                                
+                                                                <!-- button --->
+                                                                <div class="form-group col-sm-6">
+                                                                  <button type="button">Apply</button>
+                                                                </div>
+                                                            
+                                                                
+                                                                
+                                                            </form>
+                                                            
+                                                            </div>
+                                                            
+                                                              
+                                                                
+                                                                
+                                                                
+
+                                                               
+
+
+
+                                                          </div>
+                                                          
+                                                          <!-- form -->
+
+                                                        </div>
+                                                      </div>  
+                                                    </div>
+
+                                                    
+                                                  </div>
+                                                </div>
+                                                  
+                                                
+                                                  <!-- social -->
+                                                  <div id="social" class="text-left bottomleft">
+                                                      <span>Facebook</span>
+                                                      <span>Twitter</span>
+                                                  </div>
+                                                  <!-- Ts & Cs // Private Policy -->
+                                                  <div id="Ts-Cs" class="text-right bottomright">
+                                                      <span class="d-inline-block text-truncate">Terms & Conditions</span>
+                                                      <span>__</span>
+                                                      <span class="d-inline-block text-truncate">Privacy Policy</span>
+                                                  </div>
+                                              
+                                              </div>
+
+
+
+                                          
+                                  </div>
+
+                                 <!-- <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+                                  </div> -->
+
+                              </div>
+                          </div>
+                      </div>
+                      <!-- 
+                    full screen Modal
+                    -->
+
+
                     
                     <div class="form-check col-sm-12">
                       <input type="checkbox" class="form-check-input" name="notification" id="notification" value="1">

@@ -46,6 +46,15 @@ form{width: 100%;}
 .form-group{
     padding-top: 20px;
 }
+
+.form-group .dropdownArrow{
+    /* width: 100%; */
+    margin-bottom: 0;
+}
+.dropdownArrow{
+    /* width: 100%; */
+}
+
 input{
     font-size: 12px!important;
     padding-bottom: 15px!important;
@@ -68,6 +77,11 @@ input[type="text"],input[type="email"],input[type="checkbox"]:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+label button{
+    background: transparent;
+    color: #ffffff;
+    width: 100%;
 }
 
 
@@ -95,9 +109,14 @@ select.form-control:focus {
     height: 60px;
     padding: 10px 16px;
     border-radius: 35px;
+    border: 1px solid #ffffff;
     font-size: 24px;
     line-height: 1.33;
     margin-right: 10px; 
+    background: transparent;
+}
+.btn-circle i {
+    color: #ffffff;
 }
 
 #submit .btn {
@@ -107,6 +126,7 @@ select.form-control:focus {
     background: transparent;
     color: #fff;
     border: 1px solid #fff;
+    text-transform: uppercase;
 }
 
 #getInvolved {
@@ -121,3 +141,30 @@ select.form-control:focus {
 .bottom-row {
     margin-top: 50px;
 }
+
+
+/* modal - classifications */
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+    background: #0A0213;
+    color: #ffffff;
+}
+
+.modal-full button{
+    color: #ffffff;
+}
+
+.class-list {
+    margin-top: 80px;
+}
+
+.modal-full input {
+    margin-bottom: 80px;
+}
+
