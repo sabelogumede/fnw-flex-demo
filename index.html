@@ -10,23 +10,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/drawerMenu.css">
 
     <title>FNW Flex</title>
   </head>
   <body>
 
     
-    <div id="body-wrap" class="wrapper">
+    <div class="wrapper body-wrap">
     
       <!-- Top Header -->
       <nav id="topnav" class="navbar navbar-trans">
         <div class="container-fluid">
-            <a href="#">Menu</a>
+            <!-- Use any element to open the sidenav -->
+            <span onclick="openNav()">Menu</span>
             <div class="topnav-right"> 
               <a href="#"><img src="images/Logo.png" alt=""></a>
             </div>
         </div>        
       </nav>
+
+
       
 
       <!-- container-->
@@ -43,6 +47,10 @@
                    Donec laoreet tempor est sit amet gravida. Nulla laoreet malesuada nunc vel ultricies.</p>
                 </div>
                 <!--form -->
+
+
+
+
                 
                 <!-- form -->
 
@@ -51,16 +59,17 @@
           </div>
 
 
-          <!-- breadcrum -->
-          <div id="breadCrum" class="col-sm-2 text-right">
-            <span class="text">add new word</span>
-          </div>
+          
 
           
          </div>
        </div>
         
       
+        <!-- breadcrum -->
+          <div id="breadCrum" class="col-sm-2 text-left bottomleft">
+            <span class="text">add new word</span>
+          </div>
         <!-- social -->
         <div id="social" class="text-left bottomleft">
             <span>Facebook</span>
@@ -74,6 +83,82 @@
         </div>
     
     </div>
+
+<!----------------------- Drawer slide menu --------------------------->
+
+        <div id="mySidenav" class="sidenav">
+
+
+            <div class="wrapper body-wrap">
+            
+              <!-- Top Header -->
+              <nav id="topnav" class="navbar navbar-trans">
+                <div class="container-fluid">
+                    
+                    <!-- Use any element to open the sidenav -->
+                    <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</span>
+                    <div class="topnav-right"> 
+                      <a href="#"><img src="images/Logo.png" alt=""></a>
+                    </div>
+                </div>        
+              </nav>
+
+
+              
+
+              <!-- container-->
+              <div class="container">
+                <div class="row">
+
+                <!-- home -->
+                  <div class="col-sm-12">
+                    <div class="container">
+                      <div class="row">
+
+                        <div id="contact" class="col-sm-9">
+                          <a href="#">Word list</a>
+                          <a href="#">Add A New Word</a>
+                          <a href="#">Contact</a>
+                        </div>
+
+                      </div>
+                    </div>  
+                  </div>
+
+
+                  
+
+                  
+                </div>
+              </div>
+                
+                <!-- breadcrum -->
+                <div id="breadCrum" class="col-sm-2 text-left bottomleft">
+                  <span class="text">Menu</span>
+                </div>
+              
+                <!-- social -->
+                <div id="social" class="text-left bottomleft">
+                    <span>Facebook</span>
+                    <span>Twitter</span>
+                </div>
+                <!-- Ts & Cs // Private Policy -->
+                <div id="Ts-Cs" class="text-right bottomright">
+                    <span class="d-inline-block text-truncate">Terms & Conditions</span>
+                    <span>__</span>
+                    <span class="d-inline-block text-truncate">Privacy Policy</span>
+                </div>
+            
+            </div>
+
+
+
+          </div>
+<!----------------------- Drawer slide menu - End------------------------>
+
+
+     <!-- JS files -->
+    <script src="js/drawerMenu.js"><script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -19,9 +19,9 @@ body {
 }
 
 
-#body-wrap {
-    /* height: 100vh; */
-    height: 770px;
+.body-wrap {
+    height: 100vh;
+    /* height: 770px; */
     /* height: 790px; */
     max-width: 1369px; 
     margin: 10px auto 0;
