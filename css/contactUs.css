@@ -20,7 +20,7 @@ body{
     color: #FFC900!important;
 }
 
-#contactUs, #definition {
+#contactUs {
     border: 1px solid yellow;
     /* height: 95%; */
 }
@@ -167,4 +167,53 @@ label button{
 .modal-full input {
     margin-bottom: 80px;
 }
+
+
+
+/* ------Ts and Cs------- and ---- Privacy Policy */
+
+/* accordion */
+
+
+.panel{
+    border-bottom: 1px solid #fff;
+}
+.panel:last-child{
+    border-bottom: none;
+}
+.panel-body{
+    padding-bottom: 15px;
+    padding-left: 35px;
+}
+.panel-title {
+    padding: 15px 0 10px 0;
+    
+    text-transform: uppercase;
+    /* font-size: 16px; */
+    font-size: 20px;
+    letter-spacing: 2px;
+    /* color: #ffffff; */
+}
+.panel-title a{
+    color: #ffffff;
+}
+
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 5px;
+    color: #00D13F;
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+    
+}
+
 
