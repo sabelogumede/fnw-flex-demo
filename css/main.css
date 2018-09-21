@@ -13,15 +13,15 @@ body {
 
 
 .container{
-    margin: 0;
+    margin: 0!important;
     max-width: 100%!important;
-    
+    padding: 0!important;
 }
 
 
 .body-wrap {
-    height: 100vh;
-    /* height: 770px; */
+    /* height: 100vh; */
+    height: 770px;
     /* height: 790px; */
     max-width: 1369px; 
     margin: 10px auto 0;
@@ -31,33 +31,45 @@ body {
 #topnav {
     padding: 8px 0 30px 0!important;
 }
+
 .container-fluid {
     padding: 0!important;
 }
 
-/* #body-wrap, #social, #Ts-Cs, #header, #breadCrum, #wordList {
-    border: 1px solid #fff;
-} */
+
+#topnav .navbutton{
+    width: 100px;
+    text-align: center;
+}
+
+.navbutton img{
+    width: 70px;
+}
 
 
 
 /* wrapper - home Page */
 .wrapper {
     position: relative;
+    padding-bottom: 50px;
+    width: 100%;
+    
 
 }
 
 
 /* beadcrum */
 #breadCrum {
-    /* margin-bottom: 100px; */
+    
+    margin-bottom: 200px;
     /* rotate */
     -webkit-transform: rotateZ(90deg); /* Safari */
     transform: rotateZ(90deg); /* Standard syntax */
     /* top: 60%; */
-    left: -7.4%;
-    float: left;
+    left: -11.6%;
+    /* float: left; */
     padding-left: 0!important;
+    font-size: 14px;
 }
 
 #breadCrum .text{
@@ -67,17 +79,117 @@ body {
 
 
 /* social and breadcrum */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+   
+/* li {
+    
+} */
 
 .bottomright {
     position: absolute;
     bottom: 8px;
     right: 16px;
-    /* font-size: 18px; */
+    font-size: 14px;
 }
 /* Ts & Cs */
 .bottomleft {
     position: absolute;
     bottom: 8px;
-    left: 16px;
-    /* font-size: 18px; */
+    left: 7px;
+    font-size: 14px;
 }
+
+
+
+/* ----------------------mobile breckfast---------------------------------- */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    body {
+        padding: 5px 15px 5px 15px;
+        height: 100%;
+    }
+
+    .body-wrap {
+        height: 100%;
+        min-height: 650px;
+    }
+     /* #topnav{
+        position: fixed;
+        
+        width: 100%;
+    } */
+
+    #topnav .navbutton{
+        width: 100px;
+        text-align: left;
+    }
+
+    #topnav .menu{
+        padding-left: 15px;
+    }
+
+
+
+
+
+
+
+    /* beadcrum */
+    #breadCrum {
+        padding-top: 10px;
+    
+        left: -47.6%;
+        /* float: left; */
+        padding-left: 0!important;
+        font-size: 14px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+       
+    /* li {
+        
+    } */
+    /* social and breadcrum */
+
+    .bottomright {
+        position: absolute;
+        /* bottom: 8px; */
+        /* bottom: -100px; */
+        bottom: -10%;
+        right: 8px;
+        font-size: 14px;
+    }
+    /* Ts & Cs */
+    .bottomleft {
+        position: absolute;
+        /* bottom: 8px; */
+        /* bottom: -100px; */
+        bottom: -10%;
+        left: 5px;
+        font-size: 14px;
+    }
+
+    
+    
+}
+
+    
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    /* Styles */
+}
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+    /* Styles */
+    }
